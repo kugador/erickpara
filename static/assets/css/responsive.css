@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1000px) {
+	
+	
+	
+	
+	
+	
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	
+		.contact_form_container{margin-top:0px;}
+		.top_quality:before {width:100%;    margin-left: -38px;}
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+.contact_form_container{margin-top:0px;}
+
+		.top_quality:before {width:100%;    margin-left: -38px; transform:none;}
+
+	.top_header .contact_info{display:none;}
+	
+
+}
+
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	
+	
+	.contact_form_container{margin-top:10px;}
+
+		.top_quality:before {width:100%;    margin-left:0px; transform:none;}
+		.top_header .contact_info{display:none;}
+
+	
+	
+}
+
+

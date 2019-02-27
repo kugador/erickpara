@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/dist/css/bootstrap.min.css') }}">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/static/css'>
+         <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+         <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/responsive.css') }}">
+    <title>{% block title %}{% endblock %} - Mi red social</title>
+    {% endblock %}
+  </head>
+  <body>{% block header %}
+  <header class="main__header normal">
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation"> 
+      <!-- Brand and toggle get grouped for better mobile display --> 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="menuBar">
+        <ul class="menu">
+          <li><a href="index2">Inicio</a></li>
+        </ul>
+        <ul class="menu m_right">
+        <li><a href="about">About</a></li>
+        </ul>
+      </div>
+      <div class="navbar-header">
+        <h1 class="navbar-brand"><a href="index2">MI RED!</a></h1>
+        <a href="#" onClick="javascript.void()" class="submenu">Menus</a> </div>
+      <!-- /.navbar-collapse --> 
+    </nav>
+  </div>
+</header>
+{% endblock %}
+<!--end of slider section-->
+{% block intermedio %}
+  <div class="titler services text-center">
+    <div class="seper"></div>
+    <h2 class="page__title">GRACIAS POR USAR MI RED SOCIAL</h2>
+    <div class="seper"></div>
+  </div>
+  </br>
+  </br>
+  </br>
+  <form id="reg" name="log" action="." method="post" class="contact-form row">
+            <div class="form-group col-md-3">
+              <input required type="text" class="form-control" id="name" name="name" placeholder="Ingrese un usuario creado:">
+            </div>
+            <input id="submit-button" type="submit" class="btn btn-g btn-info" value="ingresa!">
+  </form>
+  </br>
+  </br>
+  </br>
+  
+{% endblock %}
+{% block footer %}
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h3>About</h3>
+        <p>El programa fue creado en el seminario de python de la Universidad Polit&eacute;cnica Salesiana impartida por el Ing.Rodrigo Tufi&ntilde;o. <br />
+          <br />
+          El prop&oacute;cito de este proframa fue vincular c&oacute;digo pyhton a la programaci&iacute;n web y lo he desarrollado con un grado de dificultad alto. Atentamente: Erik Parra</p>
+      </div>
+      <div class="col-md-3">
+        <h3>Social</h3>
+        <p>Lucas Bejarano S8-221<br />
+          Quito, UIO 170121<br />
+          ECUADOR<br />
+          <br />
+          Phone: (+593) 98373647<br />
+          <br />
+        </p>
+        <div class="social__icons"> <a href="#" class="socialicon socialicon-twitter"></a> <a href="https://www.facebook.com/LaSalesianaOficial/" class="socialicon socialicon-facebook"></a> <a href="#" class="socialicon socialicon-google"></a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script type="text/javascript" src="static/assets/js/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="static/assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+
+$('.carousel').carousel({
+  interval: 4500, // in milliseconds
+  pause: 'none' // set to 'true' to pause slider on mouse hover
+})
+
+</script>
+<script type="text/javascript">
+$( "a.submenu" ).click(function() {
+$( ".menuBar" ).slideToggle( "normal", function() {
+// Animation complete.
+});
+});
+$( "ul li.dropdown a" ).click(function() {
+$( "ul li.dropdown ul" ).slideToggle( "normal", function() {
+// Animation complete.
+});
+$('ul li.dropdown').toggleClass('current');
+});
+</script>
+{% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+   

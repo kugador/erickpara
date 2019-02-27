@@ -1,0 +1,57 @@
+{% extends "base_perfil.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block header %}
+    {{ super() }}
+{% endblock %}
+{% block intermedio %}
+    {{ super() }}
+
+    <table class="table table-responsive table-hover">
+      <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>{{n}}</td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>{{ed}}</td>
+        </tr>
+        <tr>
+            <td>Estatura</td>
+            <td>{{tam}}</td>
+        </tr>
+        <tr>
+            <td>Sexo</td>
+            <td>{{sex}}</td>
+        </tr>
+        <tr>
+            <td>Pais de origen</td>
+            <td>{{pa}}</td>
+        </tr>
+        <tr>
+            <td>Lista de amigos</td>
+            <td>{{num_amigos}}</td>
+        </tr>
+        <tr>
+            <td>Estado</td>
+            <td>{{esta}}</td>
+        </tr>
+    </tbody>
+</table>
+    
+    <h3>{{mur}}</h3>
+{% endblock %}
+{% block footer %}
+    {{ super() }}
+
+
+    <section>
+          <div class="container">
+            <div class="copyright"> <p class="text-center copyright">&copy; Copyright Erik Parra. All Rights Reserved.</p>
+            </div>
+          </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base_logon.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block header %}
+    {{ super() }}
+{% endblock %}
+{% block intermedio %}
+    {{ super() }}
+    {% for num, prediction, prob in my_list %}
+    <tr>
+        <td>{{ nombre }}</td>
+        <td>{{ edad }}</td>
+        <td>{{ estatura_m }},{{ estatura_cm }}</td>
+        <td>{{ sexo }}</td>
+        <td>{{ pais }}</td>
+        <td>{{ amigos }}</td>
+        <td>{{ estado }}</td>
+        <td>{{ muro }}</td>
+    </tr>
+    {% endfor %}
+{% endblock %}
+{% block footer %}
+    {{ super() }}
+
+
+    <section>
+          <div class="container">
+            <div class="copyright"> <p class="text-center copyright">&copy; Copyright Erik Parra. All Rights Reserved.</p>
+            </div>
+          </div>
+    </section>
+{% endblock %}
